@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Readex+Pro:wght@200&family=Sarabun:wght@100&display=swap');
+body {
+    margin: auto;
+    background-color: black;
+    font-family: Readex Pro, sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+}
+
+header {
+    background-color: black;
+    height: 380px;
+}
+
+.imagem {
+    margin-left: 540px;
+    opacity: 0.5;
+}
+
+.sinopse {
+    position: relative;
+    top: -340px;
+    color: white;
+    left: 150px;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 1100px;
+    z-index: 999;
+    display: flex;
+}
+
+.menu-aberto {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: -200px;
+}
+
+#menu-principal {
+    width: 190px;
+    height: 100vh;
+    background-color: rgba(17, 17, 17, 0);
+    box-shadow: 3px 2px 5px rgba(17, 17, 17, 0);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all ease .10s;
+}
+
+#menu-principal ul,
+#menu-principal li {
+    padding: 0;
+    list-style: none;
+}
+
+#menu-principal li {
+    display: block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#menu-principal li:hover {
+    background: #555;
+}
+
+.menu-opened {
+    width: 0px !important;
+}
+
+.slideshow {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    -moz-transition: all 0.5s;
+    transform: all 0.5s;
+    transition: all 0.5s;
+}
+
+.fotos:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.fotos1:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.fotos2:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.fotos,
+.fotos1,
+.fotos2 {
+    margin-top: 0px;
+    width: 200px;
+    height: 250px;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.section {
+    margin: 15px;
+    size: 30px;
+    background-color: black;
+    position: absolute;
+    height: 200;
+    left: 130px;
+}
